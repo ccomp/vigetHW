@@ -6,6 +6,246 @@
 	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-	
+	<header class="row">
+
+		<img src="assets/yellow-pill.svg" alt="yellow pill">
+		<img src="assets/more-pills.svg" alt="a blue pill, a purple pill, and a yellow pill">
+		
+		<span class="subTitle">A Viget Exploration</span>
+		<h1>
+			<img src="assets/title.svg" alt="Improving Medical Adherence">	
+		</h1>
+		
+		<img src="assets/pills.svg" alt="a blue pill and yellow pill">
+		<img src="assets/purple-pills.svg" alt="two purple pills">
+
+		<!-- yellow-pill.svg is top left -->
+		<!-- more-pills.svg is top right -->
+		<!-- pills.svg is bottom left -->
+		<!-- purple-pills.svg is bottom right -->
+
+		<section class="whiteBox">
+			<div>
+				<h2>Patients who don't take medication as prescribed are at risk of worsening health</h2>
+				<p>Just in the U.S., non-adherence has been attributed to over $100 billion dollars in avoidable healthcare costs.<span>1</span> In developed countries, among patients with chronic illness, approximately 50% do not take medications as prescribed.<span>2</span></p>
+				<p id="whiteBoxQuote">“Increasing the effectiveness of adherence interventions might have a greater impact on the health of the population than any improvement in specific medical treatment.”</p>
+				<p id="WHO">World Health Organization, 2005 <span>3</span></p>
+			</div>
+		</section>
+		<figure id="pillboxes">
+			<figure id="pillb1">
+				<img src="assets/pill-bottle3.svg" alt="red, rectangular pill bottle">
+			</figure>
+			<figure id="pillb2">
+				<img src="assets/pill-bottle.svg" alt="orange, fat pill bottle">
+			</figure>
+			<figure id="pillb3">
+				<img src="assets/pill-bottle2.svg" alt="orange, skinny pill bottle">
+			</figure>
+		</figure>
+	</header>
+
+	<!-- each section past the top header to be identified and provided appropriate whitespace within the class row -->
+
+	<!-- Why people don't adhere -->
+	<section class="row">
+		<span class="subTitle">WHY PEOPLE DON'T ADHERE</span>
+		<h2 class="sectionDescription">A myriad of factors conspire to prevent people from sticking to their treatment programs. But a few are most telling.</h2>
+		<section id="humanBody">
+			<figure>
+				<img src="assets/body.svg" alt="a gray outline of a human body">
+				<figure class="tagRight" id="comprehension">
+					<img src="assets/icon-comprehension.svg" alt="Two intertwined gears">
+					<figcaption>
+					<h3>Comprehension</h3>
+					“All of that medical jargon doesn’t make much sense to me but I don’t want to bother the doctor with my silly questions.”
+					</figcaption>
+				</figure>
+				<figure class="tagLeft" id="denial">
+					<img src="assets/icon-denial.svg" alt="A heart symbol">
+					<figcaption>
+					<h3>Denial</h3>
+					“I feel just fine. I don’t know why that doctor thinks I’m sick. Why would I take medicine that I don’t need?”
+					</figcaption>
+				</figure>
+				<figure class="tagRight" id="cost">
+					<img src="assets/icon-cost.svg" alt="A dollar sign">
+					<figcaption>
+					<h3>Cost</h3>
+					“I took my prescription to the pharmacy but they said it would cost several hundred dollars! I just couldn’t afford it.”
+					</figcaption>
+				</figure>
+				<figure class="tagLeft" id="complexity">
+					<img src="assets/icon-complexity.svg" alt="Five tally marks">
+					<figcaption>
+					<h3>Complexity</h3>
+					“Taking 15 medications every day is tough. Especially since they all have different instructions. How am I supposed to keep track of everything?”
+					</figcaption>
+				</figure>
+			</figure>
+		</section>
+	</section>
+
+	<!-- The Question -->
+	<section class="row">
+		<span class="subTitle">THE QUESTION</span>
+		<h2 class="sectionDescription">How can technology help patients deal with these factors, so they adhere more accurately and consistently?</h2>
+		<!-- Float both the sub-article and the image left -->
+		<article>
+			<p>
+			Access was our primary concern. Smartphone adoption is growing but 35% of the U.S. population still doesn’t own one.<span>4</span> Smartphones offer many additional features but impose a barrier of entry that seemed too high. Reliance on personal computers is also problematic, especially among disadvantaged patients. 
+			</p>
+			<p>
+			We narrowed our exploration to technology that was pervasive and familiar. Nearly 9 out of 10 American adults use a phone capable of texting.<span>5</span> Furthermore, adherence studies using text reminders show promising results.<span>6</span>  Texting shows the potential to address difficult issues around the world and across verticals. In Libya, the development of the world’s first SMS voter registration system led to 1.5 million voter registrations.<span>7</span>
+			</p>
+			<p>
+			Could texts be used not only to send reminders but also to build an ongoing two-way dialogue with a trusted health partner? Would this conversation help improve medication adherence?
+			</p>
+		</article>
+
+		<!-- rotate the figure using css -->
+		<figure>
+			<img src="assets/phone.svg">
+		</figure>
+	</section>
+
+	<section class="row" id="meetFlorence">
+		<header>
+			<figure>
+				<img src="assets/florence.svg">	
+			</figure>
+			<span class="subTitle">THE CONCEPT</span>
+			<h1>Meet Florence</h1>
+			<p>
+				Our explorations led to the concept of Florence — a personal companion that would help patients understand and manage their medication regimen.  A chatbot at heart, patients would converse with her through text and picture messages. 
+			</p>
+			<p>
+				If developed, a simple, familiar interface would hide her powerful intelligence. Behind the scenes, machine learning and behavioral modeling would enable her to offer a tailored, human experience based on each patient’s needs.
+			</p>
+		</header>
+
+		<!-- nest sections within the meetFlorence section -->
+		<!-- these sections will be styled as white boxes and share a common class -->
+
+		<section class="row underFlorence">
+			<section class="firstHalf">
+				<h1>SHE GETS TO KNOW YOU</h1>
+				<p>Florence strikes up a conversation, learning details about your life, health, goals, and preferences in an engaging, human way.</p>
+				<p>This conversation unfolds over time, making this feel less like twenty questions and more like the start of a relationship.</p>
+			</section>
+			<section class="secondHalf">
+				<div class="grayC">
+					Hi! I'm Florence. What's your name?
+				</div>
+				<div class="blueC">
+					Mike
+				</div>
+				<div class="grayC">
+					Nice to meet you, Mike. I can help you set up your account with a few simple questions.
+				</div>
+				<div class="grayC">
+					You can answer these now or whenever you like. I'm always here!
+				</div>
+				<img src="assets/florence-avatar.svg">
+				<div class="grayC">
+					First question: how old are you?
+				</div>
+				<div class="blueC">
+					65
+				</div>
+			</section>
+			<img src="assets/section1-illo.svg">
+		</section>
+
+		<section class="row underFlorence">
+			<section class="firstHalf">
+				<h1>SHE KEEPS TRACK OF YOUR REGIMEN</h1>
+				<p>Florence helps you remember what to take and when. Image recognition makes adding your medication as easy as taking a picture.</p>
+			</section>
+			<section class="secondHalf">
+				<div class="grayC">
+					Let's get started adding your medications.
+				</div>
+				<div class="grayC">
+					Message me a picture of the bottle label and I'll add it. You can also type in the name if you want.
+				</div>
+				<div class="blueC">
+					<img src="assets/sample-photo.png">
+				</div>
+				<div class="grayC">
+					Here’s what I got:
+					<ul>
+						<li>Coumadin 5mg</li>
+						<li>Take one tablet daily</li>
+						<li>Prescribed by Dr. Ruth Parker</li>
+						<li>Pharmacy: Rite Aid #25335</li>
+					</ul>
+				</div>
+				<div class="grayC">
+					Is that right?
+				</div>
+				<div class="blueC">
+					Yep
+				</div>
+				<img src="assets/florence-avatar.svg">
+				<div class="grayC">
+					Ok, added.
+				</div>
+			</section>
+			<img src="assets/section2-illo.svg">			
+		</section>
+
+		<section class="row underFlorence">
+			<section class="firstHalf">
+				
+			</section>
+			<section class="secondHalf">
+				
+			</section>
+			<img src="">			
+		</section>
+
+		<section class="row underFlorence">
+			<section class="firstHalf">
+				
+			</section>
+			<section class="secondHalf">
+				
+			</section>
+			<img src="">			
+		</section>
+
+		<section class="row underFlorence">
+			<section class="firstHalf">
+				
+			</section>
+			<section class="secondHalf">
+				
+			</section>
+			<img src="">			
+		</section>
+
+		<section class="row underFlorence">
+			<section class="firstHalf">
+				
+			</section>
+			<section class="secondHalf">
+				
+			</section>
+			<img src="">			
+		</section>
+
+		<section class="row underFlorence">
+			<section class="firstHalf">
+				
+			</section>
+			<section class="secondHalf">
+				
+			</section>
+			<img src="">			
+		</section>
+
+	</section>
+
 </body>
 </html>
