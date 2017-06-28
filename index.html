@@ -6,6 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
+
+	<!-- intro -->
 	<header class="row">
 
 		<img src="assets/yellow-pill.svg" alt="yellow pill">
@@ -32,6 +34,8 @@
 				<p id="WHO">World Health Organization, 2005 <span>3</span></p>
 			</div>
 		</section>
+
+		<!-- I decided to put all the pill bottles into one figure so I could combine them visually with CSS -->
 		<figure id="pillboxes">
 			<figure id="pillb1">
 				<img src="assets/pill-bottle3.svg" alt="red, rectangular pill bottle">
@@ -44,6 +48,7 @@
 			</figure>
 		</figure>
 	</header>
+	<!-- end intro -->
 
 	<!-- each section past the top header to be identified and provided appropriate whitespace within the class row -->
 
@@ -52,6 +57,9 @@
 		<span class="subTitle">WHY PEOPLE DON'T ADHERE</span>
 		<h2 class="sectionDescription">A myriad of factors conspire to prevent people from sticking to their treatment programs. But a few are most telling.</h2>
 		<section id="humanBody">
+
+			<!-- The diagram is a series of figures, with respective captions extending into tag bubbles -->
+
 			<figure>
 				<img src="assets/body.svg" alt="a gray outline of a human body">
 				<figure class="tagRight" id="comprehension">
@@ -85,6 +93,7 @@
 			</figure>
 		</section>
 	</section>
+	<!-- end why people don't adhere -->
 
 	<!-- The Question -->
 	<section class="row">
@@ -108,11 +117,12 @@
 			<img src="assets/phone.svg">
 		</figure>
 	</section>
+	<!-- end the question -->
 
 	<section class="row" id="meetFlorence">
 		<header>
 			<figure>
-				<img src="assets/florence.svg">	
+				<img src="assets/florence.svg" alt="Florence is a friendly looking nurse with strawberry blonde hair">	
 			</figure>
 			<span class="subTitle">THE CONCEPT</span>
 			<h1>Meet Florence</h1>
@@ -128,8 +138,11 @@
 		<!-- these sections will be styled as white boxes and share a common class -->
 
 		<section class="row underFlorence">
+
+		<!-- the firstHalf and secondHalf classes will both be on the same line, side-by-side -->
+
 			<section class="firstHalf">
-				<h1>SHE GETS TO KNOW YOU</h1>
+				<h1>SHE GETS TO KNOW YOU.</h1>
 				<p>Florence strikes up a conversation, learning details about your life, health, goals, and preferences in an engaging, human way.</p>
 				<p>This conversation unfolds over time, making this feel less like twenty questions and more like the start of a relationship.</p>
 			</section>
@@ -146,7 +159,7 @@
 				<div class="grayC">
 					You can answer these now or whenever you like. I'm always here!
 				</div>
-				<img src="assets/florence-avatar.svg">
+				<img src="assets/florence-avatar.svg" alt="Florence's portrait">
 				<div class="grayC">
 					First question: how old are you?
 				</div>
@@ -154,12 +167,16 @@
 					65
 				</div>
 			</section>
-			<img src="assets/section1-illo.svg">
+
+			<!-- this image must have an absolute position -->
+			<img src="assets/section1-illo.svg" alt="A steaming cup of tea">
 		</section>
+
+		<!-- note the above format works well for the rest of the chat bubbles -->
 
 		<section class="row underFlorence">
 			<section class="firstHalf">
-				<h1>SHE KEEPS TRACK OF YOUR REGIMEN</h1>
+				<h1>SHE KEEPS TRACK OF YOUR REGIMEN.</h1>
 				<p>Florence helps you remember what to take and when. Image recognition makes adding your medication as easy as taking a picture.</p>
 			</section>
 			<section class="secondHalf">
@@ -170,7 +187,7 @@
 					Message me a picture of the bottle label and I'll add it. You can also type in the name if you want.
 				</div>
 				<div class="blueC">
-					<img src="assets/sample-photo.png">
+					<img src="assets/sample-photo.png" alt="Mike's pill bottle">
 				</div>
 				<div class="grayC">
 					Here’s what I got:
@@ -187,65 +204,194 @@
 				<div class="blueC">
 					Yep
 				</div>
-				<img src="assets/florence-avatar.svg">
+				<img src="assets/florence-avatar.svg" alt="Florence's portrait">
 				<div class="grayC">
 					Ok, added.
 				</div>
 			</section>
-			<img src="assets/section2-illo.svg">			
+			<img src="assets/section2-illo.svg" alt="An orange pill bottle">		
 		</section>
 
 		<section class="row underFlorence">
 			<section class="firstHalf">
-				
+				<h1>SHE CHECKS UP ON YOU.</h1>
+				<p>As you start taking new medications, Florence will follow up to see if you're experiencing side effects.</p>
+
+				<p>She can offer additional information to help you understand if your experience is typical&mdash;or if you should talk with your doctor.</p>
 			</section>
 			<section class="secondHalf">
 				
+				<div class="grayC">
+					Its been three days since you started taking Lisinopril. How're you feeling?
+				</div>
+				<div class="blueC">
+					a little weak and lightheaded
+				</div>
+				<div class="grayC">
+					Feeling lightheaded is a common side effect of Lisinopril. But you should let Dr. Ruth Parker know as soon as possible.
+				</div>
+				<img src="assets/florence-avatar.svg" alt="Florence's portrait">
+				<div class="grayC">
+					Here's her number: <a href="#">(919)545-2020</a>
+				</div>
+
 			</section>
-			<img src="">			
+			<img src="assets/section3-illo.svg" alt="A glass thermometer">			
 		</section>
 
 		<section class="row underFlorence">
 			<section class="firstHalf">
-				
+				<h1>SHE HELPS YOU REMEMBER.</h1>
+				<p>With complex regimens, days often blur together. Florence will show you what you've taken today &mdash; and what's left to take.</p>
 			</section>
 			<section class="secondHalf">
-				
+				<div class="blueC">
+					did I take my meds today?
+				</div>
+				<img src="assets/florence-avatar.svg" alt="Florence's portrait">
+				<div class="grayC">
+					Here's what I have for you today:
+					<ul>
+						<!-- remember to change li images to new ones -->
+						<li>Morning:</li>
+						<li>Lisinopril</li>
+						<li>Coumadin</li>
+						<li>Zoloft</li>
+						<li>Evening:</li>
+						<!-- next one has red z -->
+						<li>Lipitor</li>
+					</ul>
+				</div>
 			</section>
-			<img src="">			
+			<img src="assets/section4-illo.svg" alt="A pill box with one section open, revealing an untaken capsule">
 		</section>
 
 		<section class="row underFlorence">
 			<section class="firstHalf">
-				
+				<h1>SHE FINDS YOU DEALS.</h1>
+				<p>Because Florence knows your regimen, she can find you ways to reduce the cost of care.</p>
 			</section>
 			<section class="secondHalf">
-				
+				<div class="grayC">
+					BTW, Walmart is now offering $4 generics. Choosing warfarin, the generic form of Coumadin, would save you $15. I'll remind you when you're up for a refill.
+				</div>
+				<div class="blueC">
+					Thanks.
+				</div>
+				<img src="assets/florence-avatar.svg" alt="Florence's portrait">
+				<div class="grayC">
+					Certainly!
+				</div>
 			</section>
-			<img src="">			
+			<img src="assets/section5-illo.svg" alt="Two banknotes">			
 		</section>
 
 		<section class="row underFlorence">
 			<section class="firstHalf">
-				
+				<h1>SHE CHEERS YOU ON.</h1>
+				<p>Florence can send you occasional notes of encouragement to keep you motivated.</p>
+				<p>For patients with asymptomatic conditions, this offers a sense of progress.</p>
 			</section>
 			<section class="secondHalf">
-				
+				<div class="grayC">
+					Hey Mike! Nice job, your cholesterol is down 20%.
+				</div>
+				<img src="assets/florence-avatar.svg" alt="Florence's portrait">
+				<div class="grayC">
+					Treat yourself to something nice! <img src="assets/smile.png" alt="A smiling emoji">
+				</div>
 			</section>
-			<img src="">			
+			<img src="assets/section6-illo.svg" alt="Florence saying good job to you">			
 		</section>
 
 		<section class="row underFlorence">
 			<section class="firstHalf">
-				
+				<h1>SHE KEEPS YOU HONEST.</h1>
+				<p>If Florence notices you're not staying on top of your plan, she can message family members or others in your support network.</p>
 			</section>
 			<section class="secondHalf">
-				
+				<img src="assets/florence-avatar.svg" alt="Florence's portrait">
+				<div class="grayC">
+					Hi Kim, this is an automated message from FlorenceApp.io. Your brother Mike hasn't taken his meds in three days. You might want to give him a call. <a href="#">(919)232-0232</a>
+				</div>
 			</section>
-			<img src="">			
+			<img src="assets/section7-illo.svg" alt="A red telephone receiver">			
 		</section>
-
 	</section>
+	<!-- end meet Florence -->
+	<section class="row">
+		<span class="subTitle">BEHIND THE SCENES</span>
+		<h2 class="sectionDescription">While Florence is only a concept, here are some things that will be helpful in making her come alive.</h2>
+		<section id="florenceBody">
+			<figure>
+				<img src="assets/florence-capeless.svg" alt="Florence without a cape">
+				<figure class="tagLeft" id="knowledge">
+					<img src="assets/icon-knowledge-base.png" alt="A closed book with a medical cross on the cover">
+					<figcaption>
+					<h3>Medical Knowledge Bases</h3>
+					Side effects and drug interactions are currently available in services like <a href="#">Epocrates</a> and <a href="#">Medscape</a>. Though designed for long-form reading, it could be pruned and adapted to fit messaging constraints.  
+					</figcaption>`
+				</figure>
+				<figure class="tagRight" id="content">
+					<img src="assets/icon-comprehension.svg" alt="Two interlocked gears">
+					<figcaption>
+					<h3>Algorithmic Content</h3>
+					Generating believable messages that don’t feel artificial or templated is key to maintaining the illusion. Tools like <a href="#">Automated Insights Wordsmith</a> hint to possibilities where content can be produced on the fly and personalized to each user. 
+					</figcaption>
+				</figure>
+				<figure class="tagLeft" id="denial">
+					<img src="assets/icon-processing.png" alt="A chat bubble">
+					<figcaption>
+					<h3>Natural Language Processing</h3>
+					Florence’s conversational style will encourage users to speak to her like a friend. Natural language processing, like those offered by <a href="#">IBM’s Watson</a>, will be needed to extract meaning and respond intelligently. 
+					</figcaption>
+				</figure>
+				<figure class="tagRight" id="cost">
+					<img src="assets/icon-denial.svg" alt="A heart symbol">
+					<figcaption>
+					<h3>Behavioral Modeling</h3>
+					Florence can generate many different messages which, unchecked, could make her a little <strong>too</strong> friendly. A system that learns the preferences of users will be helpful in tailoring which kinds of messages are sent, when, and in what frequency.
+					</figcaption>
+				</figure>
+				<figure class="tagLeft" id="complexity">
+					<img src="assets/icon-integration.png" alt="A chain link">
+					<figcaption>
+					<h3>IoT Integrations</h3>
+					The emergence of connected adherence devices like <a href="#">Proteus</a> pills and <a href="#">Smrxt</a> bottles, combined with the popularity of health devices like <a href="#">Fitbits</a> and <a href="#">Qardio</a>, can provide a more rounded view of patients. Aggregating and synthesizing that information, perhaps using services like <a href="#">Validic</a>, would help Florence interact more appropriately.
+					</figcaption>
+				</figure>
+			</figure>
+		</section>
+	</section>
+	<!-- end behind the scenes -->
+
+	<!-- In Closing -->
+	<section class="row">
+		<h1>In Closing</h1>
+		<article>
+			<p>
+			Our concept, Florence, attempts to address significant causes of non-adherence from a patient’s perspective, and through the use of technology. 
+			</p>
+			<p>
+			The problem of non-adherence, however is broader than those factors. This problem needs to be approached from multiple dimensions: socio-economic, education, healthcare access, and treatment models—to name a few. Technology is just one means of attack, not the only one.  
+			</p>
+			<p>
+			If you’re interested in learning more about this problem, we encourage you to read the <a href="#">World Health Organization’s report Evidence for Action</a>. It provides a digestible overview and deep analysis into the problem.
+			</p>
+			<!-- both elements will be floated left in css -->
+			<img src="assets/book.png">
+
+		</article>
+	</section>
+
+	<footer class="row">
+		<h1>AN EXPLORATION BY <img src="viget-logo.svg" alt="Viget's logo"></h1>
+		<p>
+		At Viget, we’re continually thinking about how we can help shape and improve the experiences around us and make the world a better place — whether that’s through the technology solutions we deliver to our clients or through conceptual explorations like Florence.  
+		</p>
+		<button type="button" id="contact">CONTACT US</button>
+		<img src="assets/florence.svg">
+	</footer>
 
 </body>
 </html>
