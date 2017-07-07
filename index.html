@@ -10,35 +10,29 @@
 	<!-- intro -->
 	<header>
 
-		<img src="assets/yellow-pill.svg" alt="" id="yellow-pill">
-		<img src="assets/more-pills.svg" alt="" id="more-pills">
+		<img src="assets/yellow-pill.svg" alt="" class="pills--top-left">
+		<img src="assets/more-pills.svg" alt="" class="pills--top-right">
 		
 		<h1>
 			<span class="small-title">A Viget Exploration</span>
 			<img src="assets/title.svg" alt="-Improving Medical Adherence">
 		</h1>
 		
-		<img src="assets/pills.svg" alt="" id="pills">
-		<img src="assets/purple-pills.svg" alt="" id="purple-pills">
+		<img src="assets/pills.svg" alt="" class="pills--bottom-left">
+		<img src="assets/purple-pills.svg" alt="" class="pills--bottom-right">
 
-		<!-- yellow-pill.svg is top left -->
-		<!-- more-pills.svg is top right -->
-		<!-- pills.svg is bottom left -->
-		<!-- purple-pills.svg is bottom right -->
-
-		<section class="explanation explanation--white">
+		<section class="section__explanation explanation--white">
 			<h2>Patients who don't take medication as prescribed are at risk of worsening health</h2>
 			<p>Just in the U.S., non-adherence has been attributed to over $100 billion dollars in avoidable healthcare costs.<sup>1</sup> In developed countries, among patients with chronic illness, approximately 50% do not take medications as prescribed.<sup>2</sup></p>
 			<q>Increasing the effectiveness of adherence interventions might have a greater impact on the health of the population than any improvement in specific medical treatment.</q>
 			<cite>World Health Organization, 2005 <sup>3</sup></cite>
 		</section>
 
-		<!-- I decided to put all the pill bottles into one figure so I could combine them visually with CSS -->
 
-		<div id="pillboxes">
-			<img src="assets/pill-bottle3.svg" alt="">
-			<img src="assets/pill-bottle.svg" alt="">
-			<img src="assets/pill-bottle2.svg" alt="">
+		<div class="pillbottles">
+			<img src="assets/pill-bottle3.svg" alt="" class="pillbottle--left">
+			<img src="assets/pill-bottle.svg" alt="" class="pillbottle--center">
+			<img src="assets/pill-bottle2.svg" alt="" class="pillbottle--right">
 		</div>
 
 	</header>
@@ -49,15 +43,17 @@
 	<!-- Why people don't adhere -->
 	<section>
 
-		<header>
-			<h2>	
+		<header class="section__header">
+			<h2>
 				<span class="small-title">Why People Don't Adhere</span>
 				A myriad of factors conspire to prevent people from sticking to their treatment programs. But a few are most telling.
 			</h2>
 		</header>
 
-		<section class="explanation explanation--background">
-		<!-- add the body as a background image for this section and center it -->
+		<section class="section__explanation">
+
+			<img src="assets/body.svg" class="explanation__background">
+
 			<section class="explanation__tag--right">
 				<h3>Comprehension</h3>
 				<img src="assets/icon-comprehension.svg" alt="">
@@ -78,7 +74,7 @@
 
 			<section class="explanation__tag--left">
 				<h3>Complexity</h3>
-				<img src="assets/icon-complexity.svg" alt="Five tally marks">
+				<img src="assets/icon-complexity.svg" alt="">
 				<q>Taking 15 medications every day is tough. Especially since they all have different instructions. How am I supposed to keep track of everything?</q>
 			</section>
 
@@ -90,7 +86,7 @@
 	<!-- The Question -->
 	<section>
 
-		<header>
+		<header class="section__header">
 			<h2>
 				<span class="small-title">The Question</span>
 				How can technology help patients deal with these factors, so they adhere more accurately and consistently?
@@ -99,7 +95,7 @@
 
 		<!-- Float both the sub-section and the image left -->
 
-		<section class="explanation">
+		<section class="section__explanation">
 			<p>
 			Access was our primary concern. Smartphone adoption is growing but 35% of the U.S. population still doesn’t own one.<sup>4</sup> Smartphones offer many additional features but impose a barrier of entry that seemed too high. Reliance on personal computers is also problematic, especially among disadvantaged patients. 
 			</p>
@@ -116,9 +112,9 @@
 	</section>
 	<!-- end the question -->
 
-	<!-- Start The Concept -->
+	<!-- Start solution block -->
 	<section class="solution">
-		<header>
+		<header class="solution__header">
 			<img src="assets/florence.svg" alt="">
 			<h2>
 				<span class="small-title">The Concept</span>
@@ -205,13 +201,11 @@
 						</ul>
 					</li>
 					<li class="chatbox__chat--left">
+						<img src="assets/florence-avatar.svg" alt="">
 						Is that right?
 					</li>
 					<li class="chatbox__chat--right">
 						Yep
-					</li>
-					<li class="chatbox__chat--left">
-						<img src="assets/florence-avatar.svg" alt="">
 					</li>
 				</ul>
 
@@ -334,89 +328,76 @@
 				<p>If Florence notices you're not staying on top of your plan, she can message family members or others in your support network.</p>
 			</header>
 
-			<section class="secondHalf">
+			<section class="solution__chatbox">
 				<ul class="chatbox">
 					<li class="chatbox__chat--left">
-						
-					</li>
-					<li class="chatbox__chat--left">
-						
-					</li>
-					<li class="chatbox__chat--right">
-						
-					</li>
-					<li class="chatbox__chat--left">
-						
-					</li>
-					<li class="chatbox__chat--left">
-						
-					</li>
-					<li class="chatbox__chat--right">
-						
-					</li>
-					<li class="chatbox__chat--left">
 						<img src="assets/florence-avatar.svg" alt="">
+						Hi Kim, this is an automated message from FlorenceApp.io. Your brother Mike hasn't taken his meds in three days. You might want to give him a call. <a href="#">(919)232-0232</a>
 					</li>
 				</ul>
-				<img src="assets/florence-avatar.svg" alt="Florence's portrait">
-				<div class="grayC">
-					Hi Kim, this is an automated message from FlorenceApp.io. Your brother Mike hasn't taken his meds in three days. You might want to give him a call. <a href="#">(919)232-0232</a>
-				</div>
 			</section>
-			<img src="assets/section7-illo.svg" alt="A red telephone receiver">			
+			<img src="assets/section7-illo.svg" alt="" id="section7-illo">			
 		</section>
+
 	</section>
-	<!-- end meet Florence -->
-	<section class="row">
-		<span class="subTitle">BEHIND THE SCENES</span>
-		<h2 class="sectionDescription">While Florence is only a concept, here are some things that will be helpful in making her come alive.</h2>
-		<section id="florenceBody">
-			<figure>
-				<img src="assets/florence-capeless.svg" alt="Florence without a cape">
-				<figure class="tagLeft" id="knowledge">
-					<img src="assets/icon-knowledge-base.png" alt="A closed book with a medical cross on the cover">
-					<figcaption>
-					<h3>Medical Knowledge Bases</h3>
-					Side effects and drug interactions are currently available in services like <a href="#">Epocrates</a> and <a href="#">Medscape</a>. Though designed for long-form reading, it could be pruned and adapted to fit messaging constraints.  
-					</figcaption>`
-				</figure>
-				<figure class="tagRight" id="content">
-					<img src="assets/icon-comprehension.svg" alt="Two interlocked gears">
-					<figcaption>
-					<h3>Algorithmic Content</h3>
-					Generating believable messages that don’t feel artificial or templated is key to maintaining the illusion. Tools like <a href="#">Automated Insights Wordsmith</a> hint to possibilities where content can be produced on the fly and personalized to each user. 
-					</figcaption>
-				</figure>
-				<figure class="tagLeft" id="denial">
-					<img src="assets/icon-processing.png" alt="A chat bubble">
-					<figcaption>
-					<h3>Natural Language Processing</h3>
-					Florence’s conversational style will encourage users to speak to her like a friend. Natural language processing, like those offered by <a href="#">IBM’s Watson</a>, will be needed to extract meaning and respond intelligently. 
-					</figcaption>
-				</figure>
-				<figure class="tagRight" id="cost">
-					<img src="assets/icon-denial.svg" alt="A heart symbol">
-					<figcaption>
-					<h3>Behavioral Modeling</h3>
-					Florence can generate many different messages which, unchecked, could make her a little <strong>too</strong> friendly. A system that learns the preferences of users will be helpful in tailoring which kinds of messages are sent, when, and in what frequency.
-					</figcaption>
-				</figure>
-				<figure class="tagLeft" id="complexity">
-					<img src="assets/icon-integration.png" alt="A chain link">
-					<figcaption>
-					<h3>IoT Integrations</h3>
-					The emergence of connected adherence devices like <a href="#">Proteus</a> pills and <a href="#">Smrxt</a> bottles, combined with the popularity of health devices like <a href="#">Fitbits</a> and <a href="#">Qardio</a>, can provide a more rounded view of patients. Aggregating and synthesizing that information, perhaps using services like <a href="#">Validic</a>, would help Florence interact more appropriately.
-					</figcaption>
-				</figure>
-			</figure>
+	<!-- end solution block -->
+
+	<!-- start behind the scenes -->
+	<section>
+
+		<header class="section__header">
+			<h2>
+				<span class="small-title">Behind the Scenes</span>
+				While Florence is only a concept, here are some things that will be helpful in making her come alive.
+			</h2>
+		</header>
+
+
+		<section class="section__explanation">
+
+			<img src="assets/florence-capeless.svg" alt="" class="explanation__background">
+
+			<section class="explanation__tag--left">
+				<h3>Medical Knowledge Bases</h3>
+				<img src="assets/icon-knowledge-base.png" alt="">
+				<p>Side effects and drug interactions are currently available in services like <a href="#">Epocrates</a> and <a href="#">Medscape</a>. Though designed for long-form reading, it could be pruned and adapted to fit messaging constraints. </p>
+			</section>
+
+			<section class="explanation__tag--right">
+				<h3>Algorithmic Content</h3>
+				<img src="assets/icon-comprehension.svg" alt="">
+				<p>Generating believable messages that don’t feel artificial or templated is key to maintaining the illusion. Tools like <a href="#">Automated Insights Wordsmith</a> hint to possibilities where content can be produced on the fly and personalized to each user.</p>
+			</section>
+
+			<section class="explanation__tag--left">
+				<h3>Natural Language Processing</h3>
+				<img src="assets/icon-processing.png" alt="">
+				<p>Florence’s conversational style will encourage users to speak to her like a friend. Natural language processing, like those offered by <a href="#">IBM’s Watson</a>, will be needed to extract meaning and respond intelligently.</p>
+			</section>
+
+			<section class="explanation__tag--right">
+				<h3>Behavioral Modeling</h3>
+				<img src="assets/icon-denial.svg" alt="">
+				<p>Florence can generate many different messages which, unchecked, could make her a little <strong>too</strong> friendly. A system that learns the preferences of users will be helpful in tailoring which kinds of messages are sent, when, and in what frequency.</p>
+			</section>
+
+			<section class="explanation__tag--left">
+				<h3>IoT Integrations</h3>
+				<img src="assets/icon-integration.png" alt="">
+				<p>The emergence of connected adherence devices like <a href="#">Proteus</a> pills and <a href="#">Smrxt</a> bottles, combined with the popularity of health devices like <a href="#">Fitbits</a> and <a href="#">Qardio</a>, can provide a more rounded view of patients. Aggregating and synthesizing that information, perhaps using services like <a href="#">Validic</a>, would help Florence interact more appropriately.</p>
+			</section>
+
 		</section>
 	</section>
 	<!-- end behind the scenes -->
 
 	<!-- In Closing -->
-	<section class="row">
-		<h1>In Closing</h1>
-		<article>
+	<section>
+		<!-- Remember to add modifier to this block due to the fact it's larger than other section headers -->
+		<header class="section__header--big-title">
+			<h2>In Closing</h2>
+		</header>
+		<section class="section__explanation">
 			<p>
 			Our concept, Florence, attempts to address significant causes of non-adherence from a patient’s perspective, and through the use of technology. 
 			</p>
@@ -424,20 +405,22 @@
 			The problem of non-adherence, however is broader than those factors. This problem needs to be approached from multiple dimensions: socio-economic, education, healthcare access, and treatment models—to name a few. Technology is just one means of attack, not the only one.  
 			</p>
 			<p>
-			If you’re interested in learning more about this problem, we encourage you to read the <a href="#">World Health Organization’s report Evidence for Action</a>. It provides a digestible overview and deep analysis into the problem.
-			</p>
 			<!-- both elements will be floated left in css -->
+			If you’re interested in learning more about this problem, we encourage you to read the <a href="#">World Health Organization’s report Evidence for Action</a>. It provides a digestible overview and deep analysis into the problem.
 			<img src="assets/book.png">
+			</p>
 
-		</article>
+		</section>
 	</section>
 
-	<footer class="row">
-		<h1>AN EXPLORATION BY <img src="viget-logo.svg" alt="Viget's logo"></h1>
+	<footer>
+		<header class="section__header--small-title">
+			<h2>An Exploration By <img src="assets/viget-logo.svg" alt="Viget"></h2>
+		</header>
 		<p>
 		At Viget, we’re continually thinking about how we can help shape and improve the experiences around us and make the world a better place — whether that’s through the technology solutions we deliver to our clients or through conceptual explorations like Florence.  
 		</p>
-		<button type="button" id="contact">CONTACT US</button>
+		<a href="#">Contact Us</a>
 		<img src="assets/florence.svg">
 	</footer>
 
