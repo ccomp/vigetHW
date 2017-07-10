@@ -1,0 +1,80 @@
+body
+{
+	background-color: #d2e7e2;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	/*sass code on resetting headers*/
+}
+
+header
+{
+	margin-top: 8%;
+	text-align: center;
+}
+
+header img
+{
+	position: absolute;
+	max-width: 20%;
+}
+
+header h1
+{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 8%;
+}
+
+header h1 img
+{
+	clear: both;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 75%;
+}
+
+.pills--top-left
+{
+	left: 14%;
+	top: -7%;
+	max-width: 10%;
+	transform: rotate(45deg);
+}
+
+.pills--top-right
+{
+	right: 14%;
+	top: -7%;
+}
+
+@media (max-width: 799px)
+{
+	.pills--top-left
+	{
+		top: -3%;
+	}
+}
+
+@media (min-width: 800px) and (max-width: 1000px)
+{
+	.pills--top-left
+	{
+		top: -6%;
+	}
+}
+
+.small-title
+{
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #0e5254;
+}
+
+.section__explanation
+{
+
+}
