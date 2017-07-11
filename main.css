@@ -3,7 +3,13 @@
   padding: 0; }
 
 html {
-  font-size: 75%; }
+  font-size: 62.5%; }
+  @media (min-width: 0px) {
+    html {
+      font-size: 30%; } }
+  @media (min-width: 600px) {
+    html {
+      font-size: 50%; } }
 
 body {
   background-color: #d2e7e2; }
@@ -17,7 +23,7 @@ header {
   margin-right: auto;
   margin-top: 8%;
   text-align: center;
-  max-width: 90%; }
+  max-width: 75%; }
   header img {
     position: absolute;
     max-width: 20%; }
@@ -33,27 +39,37 @@ header {
       min-width: 75%; }
 
 .section__explanation {
-  color: #184d66; }
+  color: #184d66;
+  margin-left: auto;
+  margin-right: auto;
+  word-break: break-all;
+  hyphens: auto; }
   .section__explanation h2 {
-    font-size: 28px; }
+    font-size: 2.8rem;
+    line-height: 1.5; }
   .section__explanation p {
     font-family: "Merriweather Sans", sans-serif;
-    font-size: 18px;
-    text-align: left; }
+    font-size: 1.8rem;
+    text-align: left;
+    line-height: 1.3; }
   .section__explanation.explanation--white {
     color: #504949;
     background-color: white;
-    padding: 50px;
-    margin: 50px;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto; }
-    .section__explanation.explanation--white h2 {
-      text-align: left; }
+    width: 100%; }
+    .section__explanation.explanation--white .explanation__wrapper1 {
+      text-align: left;
+      padding: 20px 70px; }
+    .section__explanation.explanation--white .explanation__wrapper2 {
+      max-width: 75%;
+      font-size: 1.8rem;
+      margin-left: 30%;
+      display: flex;
+      flex-direction: column;
+      text-align: center; }
 
 .pills--top-left {
   left: 17%;
-  top: -7%;
+  top: -6%;
   max-width: 10%;
   transform: rotate(45deg); }
 
@@ -64,37 +80,43 @@ header {
   max-width: 30%; }
 
 .pills--bottom-left {
-  top: 29vw;
+  top: 25vw;
   max-width: 15%;
   left: 2vw;
   transform: rotate(5deg); }
 
 .pills--bottom-right {
-  top: 45vw;
+  top: 35vw;
   right: 3vw;
   max-width: 15%; }
 
 .small-title {
   font-family: "Merriweather Sans", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.0rem;
   font-weight: 500;
   text-transform: uppercase;
   color: #0e5254;
   letter-spacing: 2.8px; }
 
 @media (max-width: 399px) {
+  header {
+    max-width: 100%; }
+  .section__explanation.explanation--white div {
+    text-align: center;
+    padding: 20px 30px; }
   .pills--top-left {
-    top: -1%; }
-  .small-title {
-    font-size: 1rem; } }
+    top: -2%; }
+  .pills--bottom-right {
+    top: 45vw;
+    right: -7vw; }
+  .pills--bottom-left {
+    display: none; } }
 
 @media (min-width: 400px) and (max-width: 799px) {
   .pills--top-left {
     top: -2%; }
   .pills--top-right {
-    right: 5%; }
-  .small-title {
-    font-size: 0.75rem; } }
+    right: 5%; } }
 
 @media (min-width: 800px) and (max-width: 1000px) {
   .pills--top-left {
