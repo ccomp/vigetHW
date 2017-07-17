@@ -2,9 +2,9 @@ $light-blue: #d2e7e2;
 $spacing: 40px;
 $section-text-color: #184d66;
 $white-text-style1: #504949;
-$white-text-style2: #ea4446;
+$white-text-style2: #c06d3a;
+$link-color: #ea4446;
 $font-sans: 'Merriweather Sans', sans-serif;
-
 
 *
 {
@@ -24,12 +24,16 @@ body
 	background-color: $light-blue;
 }
 
-h1, h2, h3, h4, h5, h6
+h1, h2, h3, h4, h5, h6, cite, q,
 {
 	font-style: normal;
 	font-weight: normal;
 }
 
+a
+{
+	color: $link-color;
+}
 
 header 
 {
@@ -62,6 +66,37 @@ header
 	}
 }
 
+.centered
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.section__header
+{
+	h2
+	{
+		color: $section-text-color;
+		display: flex;
+		flex-direction: column;
+		font-size: 3.5rem;
+		max-width: 65%;
+		margin-left: auto;
+		margin-right: auto;
+		p
+		{
+			margin-top: 0.75em;
+		}
+	}
+}
+
+section
+{
+	width: 100%;
+}
+
 .section__explanation 
 {
 	// default
@@ -74,7 +109,7 @@ header
 	h2
 	{
 		font-size: 2.8rem;
-		line-height: 1.5;
+		line-height: 1.4;
 	}
 
 	p
@@ -85,31 +120,78 @@ header
 		line-height: 1.3;
 	}
 
-	&.explanation--white {
+	.explanation__background
+	{
+		max-width: 30%;
+	}
+
+	.explanation__tags
+	{
+		position: relative;
+		max-width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: -60%;
+		padding-bottom: 10%;
+		font-family: $font-sans;
+		font-size: 2.7rem;
+		color: $white-text-style1;
+		word-break: keep-all;
+		h3
+		{
+			font-weight: 500;
+		}
+		section
+		{
+			margin-bottom: 50px;
+			padding: 25px;
+		}
+		.explanation__tag--left
+		{
+			background-color: white;
+			border-radius: 1000em 9999em 9999em 1000em;
+			text-align: right;
+		}
+		.explanation__tag--right
+		{
+			background-color: white;
+			border-radius: 9999em 1000em 1000em 9999em;
+			text-align: left;
+		}
+	}
+
+	&.explanation--white 
+	{
 		color: $white-text-style1;
 		background-color: white;
 		width: 100%;
 		.explanation__wrapper1
 		{
+			margin-left: auto;
+			margin-right: auto;
 			text-align: left;
 			padding: 20px 70px;
+			max-width: 80%;
 		}
 		.explanation__wrapper2
 		{
-			max-width: 75%;
-			font-size: 1.8rem;
-			margin-left: 30%;
+			font-family: $font-sans;
+			max-width: 56.25%;
+			margin-left: 33%;
 			display: flex;
 			flex-direction: column;
 			text-align: center;
-		}
-
-		h2
-		{
-		}
-		p
-		{
-
+			line-height: 1.3;
+			padding-bottom: 20px;
+			q
+			{
+				font-size: 1.8rem;
+				color: $white-text-style2;
+			}
+			cite 
+			{
+				font-size: 1.4rem;
+			}
 		}
 	}
 
@@ -117,7 +199,6 @@ header
 		// white section version
 	}
 }
-
 
 .pills--top-left
 {
@@ -153,12 +234,43 @@ header
 .small-title
 {
 	font-family: $font-sans;
-	font-size: 1.0rem;
+	font-size: 1.7rem;
 	font-weight: 500;
 	text-transform: uppercase;
 	color: #0e5254;
 	letter-spacing: 2.8px;
 }
+
+.pillbottles
+{
+	min-width: 70%;
+	max-width: 70%;
+    position: relative;
+    bottom: 130px;
+    left: -42.6%;
+	// left: -35vw;
+	.pillbottle--left
+	{
+		// width: 30%;
+	}
+	.pillbottle--center
+	{
+		// position: relative;
+		width: 30%;
+		margin-top: 13%;
+		margin-left: 10%;
+
+	}
+	.pillbottle--right
+	{
+		// position: relative;
+		width: 12%;
+		margin-top: 7%;
+		margin-left: 20%;
+	}
+}
+
+
 
 .section__explanation
 {
@@ -170,6 +282,17 @@ header
 	header
 	{
 		max-width: 100%;
+	}
+
+	.pillbottles
+	{
+		max-width: 100%;
+		bottom: 135.6px;
+		left: -67.9%;
+		.pillbottle--left
+		{
+			display: none;
+		}
 	}
 
 	.section__explanation 
@@ -185,10 +308,13 @@ header
 		}
 
 		&.explanation--white {
-			div
+			.explanation__wrapper1
 			{
 				text-align: center;
-				padding: 20px 30px;
+			}
+			.explanation__wrapper2
+			{
+				text-align: left;
 			}
 		}
 
@@ -213,11 +339,17 @@ header
 	{
 		display: none;
 	}
-
 }
 
 @media (min-width: 400px) and (max-width: 799px)
 {
+	.pillbottles
+	{
+		max-width: 100%;
+		position: relative;
+		bottom: 97.6px;
+		left: -62.6%;
+	}
 	.pills--top-left
 	{
 		top: -2%;
@@ -226,6 +358,11 @@ header
 	.pills--top-right
 	{
 		right: 5%;
+	}
+
+	.explanation__wrapper2
+	{
+		margin-left: 27%;
 	}
 
 }
